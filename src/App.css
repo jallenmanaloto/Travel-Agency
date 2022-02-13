@@ -34,28 +34,28 @@
   z-index: 1;
 }
 
-.nav {
-  position: absolute;
-  margin-top: 3.6rem;
-  display: flex;
-  align-items: center;
-  z-index: 2;
-  color: #ffffff;
-}
-
 .links {
   display: flex;
+  width: 75%;
   align-items: center;
+  justify-content: space-around;
   padding-top: 18px;
   padding-bottom: 18px;
+  z-index: 2;
 }
 
 .account {
   height: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
   height: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
+  z-index: 2;
 }
