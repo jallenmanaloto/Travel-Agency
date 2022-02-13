@@ -36,9 +36,9 @@
 
 .links {
   display: flex;
-  width: 75%;
+  justify-content: center;
+  width: 100%;
   align-items: center;
-  justify-content: space-around;
   padding-top: 18px;
   padding-bottom: 18px;
   z-index: 2;
