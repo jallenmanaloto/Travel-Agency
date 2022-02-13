@@ -18,27 +18,57 @@ const Nav = () => {
         }}
         justifyContent="space-between"
       >
-        <Grid item lg={3}>
+        <Grid item xs={6} sm={2} md={3} lg={3}>
           <div className="logo">
             <Typography variant="h4">Dream.</Typography>
           </div>
         </Grid>
-        <Grid item lg={6} sx={{ display: "flex", justifyContent: "center" }}>
+        <Grid
+          item
+          sm={8}
+          md={6}
+          lg={6}
+          sx={{ display: { xs: "none", sm: "flex" }, justifyContent: "center" }}
+        >
           <ThemeProvider theme={fontPoppins}>
             <div className="links">
-              <Typography variant="h5" sx={{ fontSize: "1.15rem" }}>
+              <Typography
+                variant="h5"
+                sx={{
+                  pl: 3,
+                  pr: 3,
+                  fontSize: { sm: "0.9rem", lg: "1.15rem" },
+                  cursor: "pointer",
+                }}
+              >
                 Find a trip
               </Typography>
-              <Typography variant="h5" sx={{ fontSize: "1.15rem" }}>
+              <Typography
+                variant="h5"
+                sx={{
+                  pl: 3,
+                  pr: 3,
+                  fontSize: { sm: "0.9rem", lg: "1.15rem" },
+                  cursor: "pointer",
+                }}
+              >
                 Destinations
               </Typography>
-              <Typography variant="h5" sx={{ fontSize: "1.15rem" }}>
+              <Typography
+                variant="h5"
+                sx={{
+                  pl: 3,
+                  pr: 3,
+                  fontSize: { sm: "0.9rem", lg: "1.15rem" },
+                  cursor: "pointer",
+                }}
+              >
                 Contact us
               </Typography>
             </div>
           </ThemeProvider>
         </Grid>
-        <Grid item lg={3}>
+        <Grid item xs={6} sm={2} md={3} lg={3}>
           <div className="account">
             <Button
               variant="outlined"
