@@ -59,3 +59,17 @@
   align-items: center;
   z-index: 2;
 }
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 74px;
+}
+
+.field-container {
+  display: flex;
+  background-color: white;
+  width: 80%;
+  border-radius: 4px;
+}
