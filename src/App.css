@@ -69,6 +69,7 @@
 
 .field-container {
   display: flex;
+  align-items: center;
   background-color: white;
   width: 80%;
   border-radius: 4px;
