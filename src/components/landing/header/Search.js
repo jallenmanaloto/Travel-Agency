@@ -36,8 +36,8 @@ const Search = () => {
     <div className="form-wrapper">
       <ThemeProvider theme={fontInter}>
         <div className="form-container">
-          <Grid container spacing={3}>
-            <Grid item lg={10}>
+          <Grid container justifyContent="center" spacing={3}>
+            <Grid item sm={7} lg={10}>
               <div className="field-container">
                 <SearchRoundedIcon
                   sx={{ ml: "34px", color: "#AFAEB4", fontSize: "1.8rem" }}
@@ -65,7 +65,11 @@ const Search = () => {
                 />
                 <Divider
                   orientation="vertical"
-                  sx={{ height: "27px", color: "#E5E5E5" }}
+                  sx={{
+                    ml: { sm: 2, md: 2 },
+                    height: "27px",
+                    color: "#E5E5E5",
+                  }}
                 />
                 <Select
                   value={guest}
@@ -80,7 +84,7 @@ const Search = () => {
                 </Select>
               </div>
             </Grid>
-            <Grid item lg={2}>
+            <Grid item sm={2} lg={2}>
               <Button
                 sx={{
                   width: "152px",
