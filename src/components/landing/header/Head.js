@@ -1,4 +1,3 @@
-import React from "react";
 import hero from "../../../assets/images/hero.jpg";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -8,6 +7,7 @@ import { fontPoppins, fontInter } from "../../../themes/Font";
 import { ThemeProvider } from "@mui/material/styles";
 import Search from "./Search";
 import MobileSearch from "./mobile/MobileSearch";
+import SearchDrawer from "./mobile/SearchDrawer";
 
 const Head = () => {
   return (
@@ -74,6 +74,7 @@ const Head = () => {
           </Grid>
         </Grid>
       </Container>
+      <SearchDrawer />
     </div>
   );
 };
