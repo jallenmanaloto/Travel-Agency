@@ -15,10 +15,11 @@ const Nav = () => {
           zIndex: 2,
           width: "100%",
           color: "white",
+          display: { xs: "none", sm: "flex" },
         }}
         justifyContent="space-between"
       >
-        <Grid item xs={6} sm={2} md={3} lg={3}>
+        <Grid item sm={2} md={3} lg={3}>
           <div className="logo">
             <Typography variant="h4">Dream.</Typography>
           </div>
