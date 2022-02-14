@@ -5,3 +5,9 @@ export const fontPoppins = createTheme({
     fontFamily: ["Poppins", "sans-serif"].join(","),
   },
 });
+
+export const fontInter = createTheme({
+  typography: {
+    fontFamily: ["Inter", "sans-serif"].join(","),
+  },
+});
