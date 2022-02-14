@@ -4,8 +4,9 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Nav from "./Nav";
-import { fontPoppins } from "../../../themes/Font";
+import { fontPoppins, fontInter } from "../../../themes/Font";
 import { ThemeProvider } from "@mui/material/styles";
+import Search from "./Search";
 
 const Head = () => {
   return (
@@ -18,7 +19,7 @@ const Head = () => {
       >
         <Nav />
         <Grid container justifyContent="center">
-          <Grid item lg={10}>
+          <Grid item lg={5}>
             <ThemeProvider theme={fontPoppins}>
               <Typography
                 sx={{
@@ -26,8 +27,8 @@ const Head = () => {
                   zIndex: 3,
                   color: "white",
                   fontWeight: 600,
-                  fontSize: { xs: "2.75rem", sm: "5.75rem", lg: "7.75rem" },
-                  lineHeight: { md: "7.75rem", lg: "9.75rem" },
+                  fontSize: { xs: "2.75rem", sm: "62px", lg: "62px" },
+                  lineHeight: { md: "78px", lg: "78px" },
                   textAlign: "center",
                 }}
                 className="header"
@@ -39,25 +40,34 @@ const Head = () => {
           </Grid>
         </Grid>
         <Grid container justifyContent="center">
-          <Grid item lg={8}>
-            <Typography
-              className="sub-header"
-              variant="h4"
-              sx={{
-                pt: "49px",
-                fontSize: {
-                  xs: "1rem",
-                  sm: "1.25rem",
-                  md: "1.55rem",
-                  lg: "2.25rem",
-                },
-                textAlign: "center",
-                color: "white",
-              }}
-            >
-              You do not have the right to remain silent… let us know what it
-              takes to challenge you
-            </Typography>
+          <Grid item lg={4}>
+            <ThemeProvider theme={fontInter}>
+              <Typography
+                className="sub-header"
+                variant="h4"
+                sx={{
+                  pt: "49px",
+                  fontSize: {
+                    xs: "1rem",
+                    sm: "1.25rem",
+                    md: "1.55rem",
+                    lg: "18px",
+                  },
+                  lineHeight: "28px",
+                  fontWeight: "bold",
+                  textAlign: "center",
+                  color: "rgba(255, 255, 255, 0.88)",
+                }}
+              >
+                You do not have the right to remain silent… let us know what it
+                takes to challenge you
+              </Typography>
+            </ThemeProvider>
+          </Grid>
+        </Grid>
+        <Grid container justifyContent="center">
+          <Grid item lg={7} sx={{ pt: "6.125rem" }}>
+            <Search />
           </Grid>
         </Grid>
       </Container>
