@@ -19,7 +19,7 @@ const Head = () => {
       >
         <Nav />
         <Grid container justifyContent="center">
-          <Grid item lg={5}>
+          <Grid item sm={10} md={7} lg={5}>
             <ThemeProvider theme={fontPoppins}>
               <Typography
                 sx={{
@@ -40,7 +40,7 @@ const Head = () => {
           </Grid>
         </Grid>
         <Grid container justifyContent="center">
-          <Grid item lg={4}>
+          <Grid item sm={8} md={8} lg={4}>
             <ThemeProvider theme={fontInter}>
               <Typography
                 className="sub-header"
