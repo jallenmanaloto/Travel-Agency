@@ -7,6 +7,7 @@ import Nav from "./Nav";
 import { fontPoppins, fontInter } from "../../../themes/Font";
 import { ThemeProvider } from "@mui/material/styles";
 import Search from "./Search";
+import MobileSearch from "./mobile/MobileSearch";
 
 const Head = () => {
   return (
@@ -19,7 +20,7 @@ const Head = () => {
       >
         <Nav />
         <Grid container justifyContent="center">
-          <Grid item sm={10} md={7} lg={5}>
+          <Grid item xs={10} sm={10} md={7} lg={5}>
             <ThemeProvider theme={fontPoppins}>
               <Typography
                 sx={{
@@ -39,6 +40,7 @@ const Head = () => {
             </ThemeProvider>
           </Grid>
         </Grid>
+        <MobileSearch />
         <Grid container justifyContent="center">
           <Grid item sm={8} md={8} lg={4}>
             <ThemeProvider theme={fontInter}>
@@ -46,6 +48,7 @@ const Head = () => {
                 className="sub-header"
                 variant="h4"
                 sx={{
+                  display: { xs: "none", sm: "inline-block" },
                   pt: "49px",
                   fontSize: {
                     xs: "1rem",
