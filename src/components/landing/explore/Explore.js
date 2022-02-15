@@ -2,6 +2,7 @@ import React from "react";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
+import Places from "./Places";
 
 const Explore = () => {
   return (
@@ -23,8 +24,10 @@ const Explore = () => {
                 POPULAR
               </Typography>
             </Grid>
-            <Grid item>
-              <div className="explore-summary">
+          </Grid>
+          <div className="explore-summary">
+            <Grid container>
+              <Grid item sm={12} md={6} lg={5}>
                 <Typography
                   variant="h3"
                   sx={{
@@ -37,9 +40,11 @@ const Explore = () => {
                 >
                   Explore all corners of the world with us.
                 </Typography>
+              </Grid>
+              <Grid item sm={12} md={6} lg={7}>
                 <Typography
                   sx={{
-                    ml: "171px",
+                    ml: 10,
                     width: "472px",
                     color: "#5C6272",
                     fontSize: "16px",
@@ -49,9 +54,10 @@ const Explore = () => {
                   repudiandae voluptatum, dolores sequi totam perferendis
                   repellendus, nostrum, nesciunt atque unde illo ea enim?
                 </Typography>
-              </div>
+              </Grid>
             </Grid>
-          </Grid>
+          </div>
+          <Places />
         </Container>
       </div>
     </>
