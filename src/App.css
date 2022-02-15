@@ -88,11 +88,10 @@
   border-radius: 4px;
 }
 
-.info {
+.info,
+.explore-container {
   width: 100vw;
   background-color: #e5e5e5;
-  display: flex;
-  justify-content: center;
   overflow-x: hidden;
 }
 
@@ -115,4 +114,10 @@
 
 .card-texts {
   margin-top: 5rem;
+}
+
+.explore-summary {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
