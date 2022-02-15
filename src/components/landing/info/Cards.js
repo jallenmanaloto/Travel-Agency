@@ -26,17 +26,11 @@ const Cards = () => {
     },
   ];
 
-  const cardGroup = cardDetails.map((card) => {
+  const cardGroup = cardDetails.map((card, key) => {
     return (
-      <Grid item lg={4}>
-        <Card sx={{ maxWidth: "326px", height: "306px", borderRadius: "12px" }}>
-          <CardContent
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-between",
-            }}
-          >
+      <Grid key={key} item xs={7} sm={7} md={4} lg={4}>
+        <Card sx={{ height: "306px", borderRadius: "12px" }}>
+          <CardContent>
             <img className="card-image" src={card.image} alt="" />
             <div className="card-texts">
               <Typography
@@ -69,7 +63,7 @@ const Cards = () => {
   });
   return (
     <div>
-      <Grid container justifyContent="center" spacing={1}>
+      <Grid container justifyContent="center" spacing={2}>
         {cardGroup}
       </Grid>
     </div>
