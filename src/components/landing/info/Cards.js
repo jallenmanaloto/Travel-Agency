@@ -36,6 +36,7 @@ const Cards = () => {
               <Typography
                 className="card-header"
                 sx={{
+                  ml: 2,
                   color: "#1E2A39",
                   lineHeight: "36px",
                   fontSize: "24px",
@@ -47,6 +48,7 @@ const Cards = () => {
               <Typography
                 className="card-subheader"
                 sx={{
+                  ml: 2,
                   width: "90%",
                   color: "#5C6272",
                   lineHeight: "26px",
@@ -63,7 +65,7 @@ const Cards = () => {
   });
   return (
     <div>
-      <Grid container justifyContent="center" spacing={2}>
+      <Grid container justifyContent="center" spacing={4}>
         {cardGroup}
       </Grid>
     </div>
