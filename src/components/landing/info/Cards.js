@@ -29,7 +29,7 @@ const Cards = () => {
   const cardGroup = cardDetails.map((card, key) => {
     return (
       <Grid key={key} item xs={7} sm={7} md={4} lg={4}>
-        <Card sx={{ height: "306px", borderRadius: "12px" }}>
+        <Card sx={{ height: "306px", borderRadius: "12px" }} variant="outlined">
           <CardContent>
             <img className="card-image" src={card.image} alt="" />
             <div className="card-texts">
