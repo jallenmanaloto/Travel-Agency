@@ -14,7 +14,7 @@ const Info = () => {
           <Container>
             <div className="info-header-container">
               <Grid container flexDirection="column" alignItems="center">
-                <Grid item lg={12}>
+                <Grid item sm={12} md={12} lg={12}>
                   <Typography
                     sx={{
                       mt: "113px",
@@ -27,7 +27,7 @@ const Info = () => {
                     An Easier Way To Travel
                   </Typography>
                 </Grid>
-                <Grid item lg={8}>
+                <Grid item sm={8} md={8} lg={8}>
                   <Typography
                     sx={{
                       color: "#5C6272",
