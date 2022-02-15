@@ -91,7 +91,7 @@
 .info,
 .explore-container {
   width: 100vw;
-  background-color: #e5e5e5;
+  background-color: #f5f6f8;
   overflow-x: hidden;
 }
 
@@ -116,8 +116,16 @@
   margin-top: 5rem;
 }
 
-.explore-summary {
+/* .explore-summary {
   display: flex;
-  justify-content: space-between;
   width: 100%;
+} */
+
+.active-card-image {
+  width: 540px;
+  height: 290px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
 }
