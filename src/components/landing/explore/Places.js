@@ -20,7 +20,7 @@ const Places = () => {
       <Card
         sx={{
           ml: 10,
-          width: "540px",
+          width: { xs: "450px", sm: "540px", md: "540px" },
           height: "544px",
           position: "relative",
           borderRadius: "15px",
@@ -40,6 +40,9 @@ const Places = () => {
               className="place-header"
               sx={{
                 mb: 2,
+                mr: {
+                  sm: 2,
+                },
                 color: "#292929",
                 fontSize: "30px",
                 lineHeight: "100%",
@@ -48,7 +51,13 @@ const Places = () => {
             >
               Bali, Indonesia
             </Typography>
-            <Typography className="place-caption" sx={{ mr: 10 }}>
+            <Typography
+              className="place-caption"
+              sx={{
+                mr: { sm: 2, md: 4, lg: 10 },
+                mb: { sm: -3, md: 1, lg: 0 },
+              }}
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
               veniam.
             </Typography>
@@ -63,11 +72,15 @@ const Places = () => {
       <Card
         key={key}
         sx={{
-          ml: 10,
+          ml: { sm: 2, md: 5, lg: 10 },
           height: "300px",
-          width: "540px",
+          width: { sm: "340px", md: "340px", lg: "540px" },
           position: "relative",
           borderRadius: "15px",
+          display: {
+            xs: "none",
+            sm: "block",
+          },
         }}
       >
         <CardContent>
