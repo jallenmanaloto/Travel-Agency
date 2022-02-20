@@ -7,7 +7,7 @@ import Places from "./Places";
 const Explore = () => {
   return (
     <>
-      <div className="explore-container">
+      <div className="explore-container" style={{ paddingBottom: "76px" }}>
         <Container maxWidth="xl">
           <Grid container>
             <Grid item lg={12}>
