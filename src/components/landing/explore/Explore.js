@@ -3,6 +3,7 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Places from "./Places";
+import MobileButton from "./mobile/MobileButton";
 
 const Explore = () => {
   return (
@@ -14,7 +15,7 @@ const Explore = () => {
               <Typography
                 sx={{
                   mt: 15,
-                  ml: 10,
+                  ml: { xs: 5, sm: 10 },
                   letterSpacing: "0.4rem",
                   color: "#4141A5",
                   //   fontWeight: "bold",
@@ -31,7 +32,7 @@ const Explore = () => {
                 <Typography
                   variant="h3"
                   sx={{
-                    ml: 10,
+                    ml: { xs: 5, sm: 10 },
                     fontSize: "40px",
                     fontWeight: "bold",
                     width: "415px",
@@ -44,7 +45,7 @@ const Explore = () => {
               <Grid item sm={12} md={6} lg={7}>
                 <Typography
                   sx={{
-                    ml: 10,
+                    ml: { xs: 5, sm: 10 },
                     width: "472px",
                     color: "#5C6272",
                     fontSize: "16px",
@@ -58,6 +59,7 @@ const Explore = () => {
             </Grid>
           </div>
           <Places />
+          <MobileButton />
         </Container>
       </div>
     </>
