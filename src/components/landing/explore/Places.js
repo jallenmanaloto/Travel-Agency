@@ -9,6 +9,7 @@ import Cappadocia from "../../../assets/images/places/Cappadocia.jpg";
 import quote from "../../../assets/images/quote.PNG";
 import { fontPoppins } from "../../../themes/Font";
 import { ThemeProvider } from "@mui/material/styles";
+import Buttons from "./Buttons";
 
 const Places = () => {
   //state for the active card on display
@@ -78,14 +79,19 @@ const Places = () => {
 
   return (
     <>
-      <Grid container>
-        <Grid item md={12} lg={12}>
-          <div className="places-card-container">
-            {cardDisplay}
-            {cardReserve}
-          </div>
+      <div className="explore-container">
+        <Grid container>
+          <Grid item md={12} lg={12}>
+            <div className="places-card-container">
+              {cardDisplay}
+              {cardReserve}
+            </div>
+          </Grid>
         </Grid>
-      </Grid>
+        <div className="button-container">
+          <Buttons />
+        </div>
+      </div>
     </>
   );
 };
