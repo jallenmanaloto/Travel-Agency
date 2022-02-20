@@ -94,7 +94,6 @@ body {
 .explore-container {
   width: 100vw;
   background-color: #f5f6f8;
-  overflow-x: hidden;
 }
 
 .info-header-container {
@@ -108,6 +107,7 @@ body {
   display: flex;
   margin-top: 5em;
   width: 100vw;
+  position: relative;
 }
 
 .card-container {
@@ -169,4 +169,10 @@ body {
   height: 300px;
   width: 540px;
   object-fit: cover;
+}
+
+.button-container {
+  position: fixed;
+  bottom: 82px;
+  left: 60%;
 }
