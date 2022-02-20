@@ -19,7 +19,7 @@ const Places = () => {
     <ThemeProvider theme={fontPoppins}>
       <Card
         sx={{
-          ml: 10,
+          ml: { xs: 5, sm: 10 },
           width: { xs: "450px", sm: "540px", md: "540px" },
           height: "544px",
           position: "relative",
@@ -74,7 +74,7 @@ const Places = () => {
         sx={{
           ml: { sm: 2, md: 5, lg: 10 },
           height: "300px",
-          width: { sm: "340px", md: "340px", lg: "540px" },
+          width: { sm: "340px", md: "440px", lg: "540px" },
           position: "relative",
           borderRadius: "15px",
           display: {
