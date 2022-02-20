@@ -26,18 +26,18 @@ const Buttons = () => {
         variant="contained"
         sx={{
           mr: "10px",
-          ml: { sm: 10, md: 10 },
-          display: { xs: "none", sm: "inline-block" },
+          ml: { sm: 25, md: 25 },
+          display: { xs: "none", sm: "inline" },
         }}
       >
-        <ArrowBackIcon />
+        <ArrowBackIcon sx={{ mt: 1, mr: 0.5 }} />
       </Button>
       <Button
         className={classes.navigation}
         variant="contained"
-        sx={{ ml: "10px", display: { xs: "none", sm: "inline-block" } }}
+        sx={{ ml: "10px", display: { xs: "none", sm: "inline" } }}
       >
-        <ArrowForwardIcon />
+        <ArrowForwardIcon sx={{ mt: 1, mr: 0.5 }} />
       </Button>
     </div>
   );
