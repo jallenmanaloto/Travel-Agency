@@ -4,14 +4,16 @@
   box-sizing: border-box;
 }
 
-.App {
-  overflow: hidden;
+html,
+body {
+  overflow-x: hidden;
 }
 
 .head {
   height: 100vh;
   width: 100vw;
   background-color: aliceblue;
+  overflow-x: hidden;
 }
 
 .hero {
@@ -102,6 +104,12 @@
   text-align: center;
 }
 
+.places-card-container {
+  display: flex;
+  margin-top: 5em;
+  width: 100vw;
+}
+
 .card-container {
   margin-top: 80px;
   padding-bottom: 5em;
@@ -145,10 +153,20 @@
   margin-top: 50%;
   margin-left: 50%;
   transform: translate(-50%, -50%);
+  object-fit: cover;
 }
 
 .place-text {
   position: absolute;
   bottom: 2.5rem;
   left: 2.5rem;
+}
+
+.card-reserve {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300px;
+  width: 540px;
+  object-fit: cover;
 }
